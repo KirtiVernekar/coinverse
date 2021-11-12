@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { Card, Row, Col, Input } from 'antd';
 
 import { useGetCryptosQuery } from '../../services/cryptoCoinApi';
-import {Loader} from '..';
-import './Cryptocurrencies.css'
+import { Loader } from '..';
+import './CryptoCurrencies.css'
 
 const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 10 : 100;

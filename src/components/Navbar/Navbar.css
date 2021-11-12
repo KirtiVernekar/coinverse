@@ -7,6 +7,13 @@
     background-color: rgb(0, 21, 41);
 }
 
+.logo-container{
+    background-color: #001529;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
 .logo{
     margin:0 0 0 15px;
 }
