@@ -84,12 +84,4 @@ a:hover{
       position: absolute;
       right: 0px;
   }
-
-  .home-title{
-      font-size: 1.4rem !important;
-  }
-  
-  .show-more{
-      font-size: 1.3rem !important;
-  }
 }

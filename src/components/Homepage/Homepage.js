@@ -4,7 +4,7 @@ import { Typography, Row, Col, Statistic } from 'antd';
 import { Link } from 'react-router-dom';
 
 import { useGetCryptosQuery } from '../../services/cryptoCoinApi';
-import { Loader, CryptoCurrencies, News } from '..';
+import { Loader, CryptoCurrencies, CryptoNews } from '..';
 import './Homepage.css'
 
 const { Title } = Typography;
@@ -35,8 +35,8 @@ const Homepage = () => {
         <Title level={2} className="home-title">Latest Crypto News</Title>
         <Title level={3}><Link to="/news">Show more</Link></Title>
       </div>
-      <News simplified />
-    </>
+      <CryptoNews simplified />
+    </> 
   );
 };
 
