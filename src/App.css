@@ -1,10 +1,10 @@
 :root{
-  --text-primary:#000;
+  /* --text-primary:#000;
   --bgPrimary:#fff;
  --bgSecondary: #F9F9F9;
  --pink: #0071bd;
  --light-blue: #e6f7ff;
- --border: #d9d9d9;
+ --border: #d9d9d9; */
 }
 
 * {
@@ -20,17 +20,26 @@ a:hover{
 .app{
   display: flex;
   overflow: hidden;
+  background-image: url("/src/images/ccryptocurrency-bg-3.png");
 }
 
+
 .navbar{
-  flex: 0.2;
-  background-color: rgb(0, 21, 41);
+  /* flex: 0.15; */
+  width: 210px;
+  background-color: rgba(0,29,58, 0.3);
+  z-index: 2;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .main{
-  flex: 0.8;
+  flex: 1;
   width: 100%;
-  
+}
+
+.layout{
+  background-color: rgba(255, 255, 255, 0) !important;
 }
 
 .routes{
@@ -38,6 +47,8 @@ a:hover{
 }
 
 .footer {
+  /* position: fixed;
+  bottom: 0; */
   background-color: #001529;
   display: flex;
   flex-direction: column;
@@ -45,7 +56,7 @@ a:hover{
   align-items: center;
 }
 
-@media screen and (max-width:1300px){
+/* @media screen and (max-width:1300px){
   .main{
       margin-left: 50px;
   }
@@ -61,7 +72,7 @@ a:hover{
   .main{
       margin-left: 100px;
   }
-}
+} */
 
 @media screen and (max-width:800px){
   .app{
@@ -70,7 +81,9 @@ a:hover{
   }
 
   .navbar{
-      flex: 1;
+      /* flex: 1; */
+      width: 100vw;
+      position: fixed;
   }
 
   .main{

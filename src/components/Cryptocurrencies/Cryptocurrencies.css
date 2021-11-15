@@ -2,12 +2,32 @@
     margin: 20px auto 30px auto;
     width: 250px;
 }
+
 .crypto-card-container{
     min-height: 65vh !important;
 }
+
 .crypto-card{
     min-width: 250px;
 }
+
+.coin-card{
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: none !important;
+    border-right: none !important;
+    background-color: rgba(255, 255, 255, 0.55) !important;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.coin-card p{
+    font-weight: 500;
+}
+
+.ant-card-head-title {
+    font-size: 1.2rem;
+}
+
 .crypto-card .crypto-image{
     width:35px;
 }

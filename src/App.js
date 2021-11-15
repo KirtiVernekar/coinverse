@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Layout, Typography, Space } from 'antd';
+import { Layout, Typography, Space, Image } from 'antd';
 
 import { Homepage, Navbar, CryptoCurrencies, Exchanges, CryptoDetails, CryptoNews } from './components';
 import './App.css';
@@ -12,7 +12,7 @@ function App() {
         <Navbar />
       </div>
       <div className="main">
-        <Layout>
+        <Layout className="layout">
           <div className="routes">
             <Routes>
               <Route path="/" element={<Homepage/>} />

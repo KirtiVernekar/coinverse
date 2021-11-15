@@ -15,8 +15,7 @@ const CryptoNews = ({ simplified }) => {
   const [newsCategory, setNewsCategory] = useState('Cryptocurrency');
   const { data } = useGetCryptosQuery(100);
   const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 12 });
-
-  console.log(cryptoNews);
+  // const { data: cryptoNews } = useGetCryptoNewsQuery();
 
   if (!cryptoNews?.value) return <Loader />;
 
@@ -26,8 +25,13 @@ const CryptoNews = ({ simplified }) => {
         <Col span={24}>
           <Select
             showSearch
-            className="select-news"
-            placeholder="Select a Crypto"
+            // className="select-news"
+            style={{
+              margin: '20px auto 10px auto',
+              width: '220px',
+              borderRadius: '10px !important'
+            }}
+            placeholder="Search Options"
             optionFilterProp="children"
             onChange={(value) => setNewsCategory(value)}
             filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
@@ -42,7 +46,7 @@ const CryptoNews = ({ simplified }) => {
           <Card hoverable className="news-card">
             <a href={news.url} target="_blank" rel="noreferrer">
               <div className="news-image-container">
-                <Title className="news-title" level={4}>{news.name}</Title>
+                <Title className="news-title" level={4}>{news.title}</Title>
                 <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt="" />
               </div>
               <p>{news.description.length > 100 ? `${news.description.substring(0, 100)}...` : news.description}</p>

@@ -30,22 +30,22 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar src={icon} size="large" />
-        <Typography.Title level={2} className="logo"><Link to="/">Coinverse</Link></Typography.Title>
+        <Avatar src={icon} size="large" style={{width: '34px', height: '34px'}} />
+        <Link to="/"><Typography.Title level={2} className="logo">Coinverse</Typography.Title></Link>
         <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
       {activeMenu && (
-      <Menu theme="dark">
-        <Menu.Item icon={<HomeOutlined />} key={'home'}>
+      <Menu theme="dark" className="menu-list">
+        <Menu.Item icon={<HomeOutlined />} key={'home'} style={{marginLeft: '10px'}}>
           <Link to="/">Home</Link>
         </Menu.Item>
-        <Menu.Item icon={<FundOutlined />} key={'cryptocurrencies'}>
+        <Menu.Item icon={<FundOutlined />} key={'cryptocurrencies'} style={{marginLeft: '10px'}}>
           <Link to="/cryptocurrencies">Crypto Currencies</Link>
         </Menu.Item>
-        <Menu.Item icon={<MoneyCollectOutlined />} key={'exchanges'}>
+        <Menu.Item icon={<MoneyCollectOutlined />} key={'exchanges'} style={{marginLeft: '10px'}}>
           <Link to="/exchanges">Exchanges</Link>
         </Menu.Item>
-        <Menu.Item icon={<BulbOutlined />} key={'cryptonews'}>
+        <Menu.Item icon={<BulbOutlined />} key={'cryptonews'} style={{marginLeft: '10px'}}>
           <Link to="/cryptonews">News</Link>
         </Menu.Item>
       </Menu>
