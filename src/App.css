@@ -21,6 +21,10 @@ a:hover{
   display: flex;
   overflow: hidden;
   background-image: url("/src/images/ccryptocurrency-bg-3.png");
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-attachment: fixed;
 }
 
 
@@ -28,14 +32,21 @@ a:hover{
   /* flex: 0.15; */
   width: 210px;
   background-color: rgba(0,29,58, 0.3);
-  z-index: 2;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  /* background-color: rgba(24,144,255, 0.3); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: hidden; */
 }
 
 .main{
   flex: 1;
   width: 100%;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
 }
 
 .layout{
@@ -49,10 +60,11 @@ a:hover{
 .footer {
   /* position: fixed;
   bottom: 0; */
-  background-color: #001529;
+  background-color: #001d3a;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   align-items: center;
 }
 

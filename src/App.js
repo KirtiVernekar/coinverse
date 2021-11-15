@@ -24,17 +24,16 @@ function App() {
           </div>
         </Layout>
         <div className="footer">
-          <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
-            <Link to="/">
-              Coinverse Inc.
-            </Link> <br />
-            All Rights Reserved.
+          <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright ©2021
+              <Link to="/">
+                  Coinverse Inc.
+              </Link>
           </Typography.Title>
-          <Space>
+          {/* <Space>
             <Link to="/">Home</Link>
             <Link to="/exchanges">Exchanges</Link>
             <Link to="/cryptonews">News</Link>
-          </Space>
+          </Space> */}
         </div>
       </div>
     </div>

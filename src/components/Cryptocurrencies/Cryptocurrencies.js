@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import millify from 'millify';
 import { Link } from 'react-router-dom';
-import { Card, Row, Col, Input } from 'antd';
+import { Card, Row, Col, Input, Typography } from 'antd';
 
 import { useGetCryptosQuery } from '../../services/cryptoCoinApi';
 import { Loader } from '..';
 import './CryptoCurrencies.css'
+
+const { Title } = Typography;
 
 const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 10 : 100;
@@ -26,9 +28,12 @@ const Cryptocurrencies = ({ simplified }) => {
   return (
     <>
       {!simplified && (
-        <div className="search-crypto">
-          <Input placeholder="Search a Crypto-Coin" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} style={{borderRadius: '10px'}}/>
-        </div>
+        <Col span={24} className="crypto-page-header">
+          <Title level={2} className="crypto-page-heading">Popular Crypto Currencies</Title>
+          <div className="crypto-page-search">
+            <Input placeholder="Search a Crypto-Coin" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
+          </div>
+        </Col>
       )}
       <Row gutter={[32, 32]} className="crypto-card-container">
         {cryptoCoins?.map((currency) => (

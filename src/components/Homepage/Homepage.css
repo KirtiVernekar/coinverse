@@ -14,18 +14,18 @@
     color: white !important;
 }
 
-/*  background-color: rgba(255, 255, 255, 0.3) !important;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0 25px 30px rgba(51, 99, 121, 0.555); 
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.1) !important; */
-
 
 .heading, .home-title{
     color: rgba(255, 255, 255, 0.9) !important;
     font-size: 1.75rem !important;
+}
+
+.card .ant-statistic-content {
+    color: rgba(255, 255, 255, 1) !important;
+    font-weight: 700 !important;
+}
+.card .ant-statistic-title{
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .home-heading-container{
@@ -37,8 +37,13 @@
 .show-more{
     margin-top: 0px !important;
     padding: 0 5px;
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: rgba(24,144,255, 1) !important;
     font-size: 1.3rem !important;
+}
+
+.show-more:hover{
+    color: rgba(255,255,255, 0.8) !important;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 800px){
