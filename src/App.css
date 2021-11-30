@@ -19,6 +19,8 @@ a:hover{
 
 .app{
   display: flex;
+  /* display: grid;
+  grid-template-columns: 210px auto; */
   overflow: hidden;
   background-image: url("/src/images/ccryptocurrency-bg-3.png");
   /* background-position: center; */
@@ -38,8 +40,8 @@ a:hover{
   /* position: fixed;
   top: 0;
   left: 0;
-  overflow-x: hidden;
-  overflow-y: hidden; */
+  overflow: hidden; */
+  
 }
 
 .main{

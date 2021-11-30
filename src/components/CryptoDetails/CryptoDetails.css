@@ -1,5 +1,13 @@
 .coin-detail-container{
-    margin: 30px;
+    margin: 5px;
+    padding: 0 15px;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: none !important;
+    border-right: none !important;
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .coin-heading-container{
@@ -27,6 +35,7 @@
 .select-timeperiod{
     width: 200px !important;
     margin-top: 20px !important;
+    margin-left: 5px !important;
 }
 
 .stats-container{

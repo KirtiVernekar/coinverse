@@ -47,9 +47,11 @@ const CryptoDetails = () => {
         </Title>
         <p>{cryptoDetails.name} live price in US Dollar (USD). View value statistics, market cap and supply.</p>
       </Col>
-      <Select defaultValue="7d" className="select-timeperiod" placeholder="Select Timeperiod" onChange={(value) => setTimeperiod(value)}>
+      <p>Timeframe
+        <Select defaultValue="7d" className="select-timeperiod" placeholder="Select Timeperiod" onChange={(value) => setTimeperiod(value)}>
         {time.map((date) => <Option key={date}>{date}</Option>)}
-      </Select>
+        </Select>
+      </p>
       <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails.price)} coinName={cryptoDetails.name} />
       <Col className="stats-container">
         <Col className="coin-value-statistics">
