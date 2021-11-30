@@ -27,36 +27,39 @@ const Exchanges = () => {
   if (isFetching) return <Loader />;
 
   return (
-    <>
+    <div className="exchange-page">
       <Col span={24} className="exchange-page-header">
         <Title level={2} className="exchange-page-heading">Popular Crypto Exchanges</Title>
         <div className="exchange-page-search">
-          <Input placeholder="Search an Exchange" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
+          <Input allowClear placeholder="Search an Exchange" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
         </div>
       </Col>
       <Row className="exchange-col-header">
-        <Col span={6}>Exchanges</Col>
-        <Col span={6}>24h Trade Volume</Col>
-        <Col span={6}>Markets</Col>
-        <Col span={6}>Change</Col>
+        <Col span={2}>No.</Col>
+        <Col span={7}>Exchanges</Col>
+        <Col span={5}>Trade Volume (24h)</Col>
+        <Col span={5}>Markets</Col>
+        <Col span={5}>Market Share</Col>
       </Row>
       <Row>
-        {cryptoExchanges?.map((exchange) => (
+        {cryptoExchanges?.map((exchange, index) => (
           <Col span={24}>
             <Collapse className="exchange-card">
               <Panel
                 key={exchange.id}
                 showArrow={false}
                 header={(
-                  <Row key={exchange.id} >
-                    <Col span={6}>
-                      <Text><strong>{exchange.rank}.</strong></Text>
+                  <Row key={exchange.id} className="exchange-card-info">
+                    <Col span={2}>
+                      <Text><strong>{index+1}.</strong></Text>
+                    </Col>
+                    <Col span={7}>
                       <Avatar className="exchange-image" src={exchange.iconUrl} />
                       <Text><strong>{exchange.name}</strong></Text>
                     </Col>
-                    <Col span={6}><Text>${millify(exchange.volume)}</Text></Col>
-                    <Col span={6}><Text>{millify(exchange.numberOfMarkets)}</Text></Col>
-                    <Col span={6}><Text>{millify(exchange.marketShare)}%</Text></Col>
+                    <Col span={5}><Text>${millify(exchange.volume)}</Text></Col>
+                    <Col span={5}><Text>{millify(exchange.numberOfMarkets)}</Text></Col>
+                    <Col span={5}><Text>{millify(exchange.marketShare)}%</Text></Col>
                   </Row>
                   )}
               >
@@ -66,7 +69,7 @@ const Exchanges = () => {
           </Col>
         ))}
       </Row>
-    </>
+    </div>
   );
 };
 

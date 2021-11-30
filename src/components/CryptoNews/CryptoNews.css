@@ -17,12 +17,12 @@
 
 .news-card{
     border-radius: 10px !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 1) !important;
     border-bottom: none !important;
     border-right: none !important;
-    background-color: rgba(255, 255, 255, 0.75) !important;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 .news-card p{

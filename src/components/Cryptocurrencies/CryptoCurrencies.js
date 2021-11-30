@@ -10,7 +10,7 @@ import './CryptoCurrencies.css'
 const { Title } = Typography;
 
 const CryptoCurrencies = ({ simplified }) => {
-  const count = simplified ? 10 : 100;
+  const count = simplified ? 12 : 100;
   const { data: cryptoCoinsList, isFetching } = useGetCryptosQuery(count);
   const [cryptoCoins, setCryptoCoins] = useState();
   const [searchTerm, setSearchTerm] = useState('');
@@ -26,12 +26,12 @@ const CryptoCurrencies = ({ simplified }) => {
   if (isFetching) return <Loader />;
 
   return (
-    <>
+    <div>
       {!simplified && (
         <Col span={24} className="crypto-page-header">
           <Title level={2} className="crypto-page-heading">Popular Crypto Currencies</Title>
           <div className="crypto-page-search">
-            <Input placeholder="Search a Crypto-Coin" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
+            <Input allowClear placeholder="Search a Crypto-Coin" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
           </div>
         </Col>
       )}
@@ -48,7 +48,7 @@ const CryptoCurrencies = ({ simplified }) => {
           </Col>
         ))}
       </Row>
-    </>
+    </div>
   );
 };
 

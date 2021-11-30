@@ -1,35 +1,24 @@
-:root{
-  /* --text-primary:#000;
-  --bgPrimary:#fff;
- --bgSecondary: #F9F9F9;
- --pink: #0071bd;
- --light-blue: #e6f7ff;
- --border: #d9d9d9; */
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* :root{
+  --text-primary:#000;
+  --bgPrimary: #001d3a;
+  --bgSecondary: #F9F9F9;
+  --light-blue: #e6f7ff;
+} */
 
 a:hover{
   color: var(--pink) !important;
 }
 
 .app{
+  height: inherit;
   display: flex;
   /* display: grid;
   grid-template-columns: 210px auto; */
   overflow: hidden;
   background-image: url("/src/images/ccryptocurrency-bg-3.png");
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+ 
   background-attachment: fixed;
-  height: 100vh;
 }
-
 
 .navbar{
   /* flex: 0.15; */
@@ -42,34 +31,23 @@ a:hover{
   top: 0;
   left: 0;
   overflow: hidden; */
-  
 }
 
 .main{
   flex: 1;
-  width: 100%;
-  /* overflow-x: scroll;
-  overflow-y: hidden; */
 }
 
 .layout{
   background-color: rgba(255, 255, 255, 0) !important;
-}
-
-.routes{
   padding: 20px;
 }
 
 .footer {
-  /* position: fixed; */
-  bottom: 0;
+  box-sizing: content-box;
   width: 100%;
   background-color: #001d3a;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  display: flex;
-  flex-direction: column;
   padding: 10px;
-  align-items: center;
 }
 
 /* @media screen and (max-width:1300px){
@@ -98,8 +76,9 @@ a:hover{
 
   .navbar{
       /* flex: 1; */
-      width: 100vw;
+      width: 100%;
       position: fixed;
+      z-index: 10;
   }
 
   .main{
@@ -107,10 +86,5 @@ a:hover{
       margin-top: 90px;
       margin-left: 0px;
       margin-right: 10px;
-  }
-
-  .ant-menu{
-      position: absolute;
-      right: 0px;
   }
 }

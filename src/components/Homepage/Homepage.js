@@ -17,7 +17,7 @@ const Homepage = () => {
 
   return (
     <>
-      <Card className="card">
+      <Card className="card stats">
         <Title level={2} className="heading">Global Crypto Stats</Title>
         <Row gutter={[32, 32]}>
           <Col span={12}><Statistic className="card-text" title="Total Cryptocurrencies" value={globalStats.total} /></Col>
@@ -30,7 +30,7 @@ const Homepage = () => {
       </Card>
       <Card className="card">
         <div className="home-heading-container">
-          <Title level={2} className="home-title">Top 10 Cryptos In The World</Title>
+          <Title level={2} className="home-title">Top 12 Cryptos In The World</Title>
           <Link to="/cryptocurrencies"><Title level={3} className="show-more">Show more</Title></Link>
         </div>
         <CryptoCurrencies simplified />

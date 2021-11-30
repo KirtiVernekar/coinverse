@@ -1,3 +1,7 @@
+.exchange-page {
+    height: 100%;
+}
+
 .exchange-page-header{
     display: flex !important;
     justify-content: space-between;
@@ -18,7 +22,7 @@
 .exchange-card{
     margin: 10px 5px !important;
     border-radius: 20px !important;
-    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
     border-bottom: none !important;
     border-right: none !important;
     background-color: rgba(255, 255, 255, 0.3) !important;
@@ -26,28 +30,34 @@
     -webkit-backdrop-filter: blur(6px);
 }
 
+.exchange-card-info {
+    text-align: center;
+}
+
 .exchange-card .ant-collapse-item{
     border: none !important;
 }
 .exchange-card .ant-typography {
     color: rgba(255, 255, 255, 1);
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 .exchange-col-header{
     margin: 10px 5px !important;
     border-radius: 20px !important;
     border: 1px solid rgba(255, 255, 255, 0.8) !important;
-    background-color: rgba(255, 255, 255, 0.75) !important;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.65) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     display: flex;
     justify-content: flex-start;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
 }
 
-
 .exchange-image{
-    margin: 0px 10px !important;
+    margin: 0px 8px !important;
+    height: 28px !important;
+    width: 28px !important;
 }
