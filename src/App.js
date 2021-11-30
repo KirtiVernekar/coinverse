@@ -21,7 +21,7 @@ function App() {
       <div className="navbar">
         <Navbar />
       </div>
-      <div className="main">
+      <div className="main">  {/* span={20}  */}
         <div className="layout">
           <Routes>
             <Route path="/" element={<Homepage/>} />

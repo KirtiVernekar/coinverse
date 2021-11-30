@@ -49,6 +49,10 @@
 }
 
 @media screen and (max-width: 800px){
+    .card{
+        margin: 10px 0 20px 0 !important;
+    }
+
     .home-title{
         font-size: 1.5rem !important;
     }
@@ -57,9 +61,3 @@
         font-size: 1.1rem !important;
     }
 }
-
-/* @media screen and (max-width: 500px){
-    .heading{
-        margin-top: 20px;
-    }
-} */
