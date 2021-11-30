@@ -9,7 +9,7 @@ import './CryptoCurrencies.css'
 
 const { Title } = Typography;
 
-const Cryptocurrencies = ({ simplified }) => {
+const CryptoCurrencies = ({ simplified }) => {
   const count = simplified ? 10 : 100;
   const { data: cryptoCoinsList, isFetching } = useGetCryptosQuery(count);
   const [cryptoCoins, setCryptoCoins] = useState();
@@ -52,4 +52,4 @@ const Cryptocurrencies = ({ simplified }) => {
   );
 };
 
-export default Cryptocurrencies;
+export default CryptoCurrencies;
