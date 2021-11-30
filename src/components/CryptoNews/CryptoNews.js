@@ -9,7 +9,7 @@ import './CryptoNews.css'
 
 const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
 
-const { Text, Title } = Typography;
+const { Title } = Typography;
 const { Option } = Select;
 const { Meta } = Card;
 

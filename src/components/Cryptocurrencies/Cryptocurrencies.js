@@ -7,7 +7,7 @@ import { useGetCryptosQuery } from '../../services/cryptoCoinApi';
 import { Loader } from '..';
 import './CryptoCurrencies.css'
 
-const { Title } = Typography;
+const { Title, Text } = Typography;
 
 const CryptoCurrencies = ({ simplified }) => {
   const count = simplified ? 10 : 100;

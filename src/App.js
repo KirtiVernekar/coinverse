@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Layout, Typography, Space, Image, Row, Col } from 'antd';
+import { Layout, Typography } from 'antd';
 
 import { Homepage, Navbar, CryptoCurrencies, Exchanges, CryptoDetails, CryptoNews } from './components';
 import './App.css';
@@ -29,11 +29,6 @@ function App() {
                   Coinverse Inc.
               </Link>
           </Typography.Title>
-          {/* <Space>
-            <Link to="/">Home</Link>
-            <Link to="/exchanges">Exchanges</Link>
-            <Link to="/cryptonews">News</Link>
-          </Space> */}
         </div>
       </div>
     </div>
