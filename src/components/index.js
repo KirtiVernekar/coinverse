@@ -6,3 +6,4 @@ export { default as CryptoNews } from './CryptoNews/CryptoNews';
 export { default as CryptoCurrencies } from './Cryptocurrencies/CryptoCurrencies';
 export { default as Exchanges } from './Exchanges/Exchanges';
 export { default as CryptoDetails } from './CryptoDetails/CryptoDetails';
+export { default as PageNotFound } from './404-page/404-page';

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import millify from 'millify';
 import { Collapse, Row, Col, Typography, Avatar, Input } from 'antd';
+// import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import HTMLReactParser from 'html-react-parser';
 
 import { useGetExchangesQuery } from '../../services/cryptoCoinApi';

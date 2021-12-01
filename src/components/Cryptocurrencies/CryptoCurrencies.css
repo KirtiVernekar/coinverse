@@ -1,3 +1,7 @@
+.crypto-page {
+    height: 100vh;
+}
+
 .crypto-page-header{
     display: flex !important;
     justify-content: space-between;

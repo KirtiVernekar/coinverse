@@ -21,14 +21,15 @@ function App() {
       <div className="navbar">
         <Navbar />
       </div>
-      <div className="main">  {/* span={20}  */}
+      <div className="main">
         <div className="layout">
           <Routes>
-            <Route path="/" element={<Homepage/>} />
+            <Route exact path="/" element={<Homepage/>} />
             <Route exact path="/exchanges" element={<Exchanges/>} />
             <Route exact path="/cryptocurrencies" element={<CryptoCurrencies/>} />
             <Route exact path="/crypto/:coinId" element={<CryptoDetails/>} />
             <Route exact path="/cryptonews" element={<CryptoNews/>} />
+            {/* <Route element={<PageNotFound/>}></Route> */}
           </Routes>
         </div> 
         <div className="footer">

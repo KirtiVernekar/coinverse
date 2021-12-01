@@ -1,7 +1,7 @@
 /* :root{
   --text-primary:#000;
   --bgPrimary: #001d3a;
-  --bgSecondary: #F9F9F9;
+  --bgSecondary: #1890ff;
   --light-blue: #e6f7ff;
 } */
 
@@ -32,6 +32,7 @@ a:hover{
   /* flex: 0.85; */
   margin-left: 210px;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 .layout{
@@ -46,18 +47,6 @@ a:hover{
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding: 10px;
 }
-
-/* @media screen and (max-width:1300px){
-  
-}
-
-@media screen and (max-width:1170px){
-  
-}
-
-@media screen and (max-width:1000px){
-  
-} */
 
 @media screen and (max-width:800px){
   .navbar{

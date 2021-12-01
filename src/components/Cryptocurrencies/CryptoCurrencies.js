@@ -26,7 +26,7 @@ const CryptoCurrencies = ({ simplified }) => {
   if (isFetching) return <Loader />;
 
   return (
-    <div>
+    <div className="crypto-page">
       {!simplified && (
         <Col span={24} className="crypto-page-header">
           <Title level={2} className="crypto-page-heading">Popular Crypto Currencies</Title>

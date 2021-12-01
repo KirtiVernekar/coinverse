@@ -36,8 +36,34 @@
     margin-left: 10px !important;
 }
 
+.news-title, .news-info {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
 .news-title:hover{
     color: #1475cf;
 }
 
+.news-info {
+    -webkit-line-clamp: 2;
+}
 
+@media screen and (max-width:1170px){
+    .news-image{
+        width:80px;
+        height:80px;
+        margin-left: 5px !important;
+    }
+}
+
+@media screen and (max-width:800px){
+    .news-image{
+        width:100px;
+        height:100px;
+        margin-left: 5px !important;
+    }
+}

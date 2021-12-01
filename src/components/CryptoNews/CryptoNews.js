@@ -49,7 +49,8 @@ const CryptoNews = ({ simplified }) => {
                 <Col span={8}><img src={news?.image?.thumbnail?.contentUrl || demoImage} alt="" className="news-image" /></Col>
                 {/* <p>{news.description.length > 100 ? `${news.description.substring(0, 100)}...` : news.description}</p> */}
               </Row>
-              <p>{news.description.length > 100 ? `${news.description.substring(0, 100)}...` : news.description}</p>
+              {/* <p>{news.description.length > 100 ? `${news.description.substring(0, 100)}...` : news.description}</p> */}
+              <p className="news-info">{news.description}</p>
               <hr style={{padding:'5px 0', border: 'none', borderTop: '1px solid gray'}} />
               <Meta
                 avatar={<Avatar src={news.provider[0]?.image?.thumbnail?.contentUrl || demoImage} alt="" />}
