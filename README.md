@@ -1,73 +1,70 @@
-# coinverse
-Coinverse is a cryptocurrency app that provides market updates about crypto coins and cryptocurrency news using RapidAPI.
+<h1 align="center">Coinverse</h1>
 
-# Getting Started with Create React App
+<p align="center"><a href="https://coinverse-kirti.netlify.app" target="_blank">Live View</a></p>
+<hr />
+<div align="center" autoplay={true} muted={true} loop={true} object-fit="cover">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Project Demo Gif]()
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+<hr />
 
-### `yarn start`
+<p align="left"> Coinverse is a cryptocurrency app that provides realtime market updates about crypto coins and latest cryptocurrency news. It is built using <strong>ReactJS, RapidAPI and RTK Query</strong> and <strong>Redux</strong> for state management.</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## :bulb:Features
 
-### `yarn test`
+:heavy_check_mark: Fetching realtime data from multiple sources using RapidAPI and RTK Query
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:heavy_check_mark: State management using Redux Toolkit
 
-### `yarn build`
+:heavy_check_mark: Glassmorphic UI
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:heavy_check_mark: Responsive design
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :hammer:Built with
 
-### `yarn eject`
+- ReactJS
+- Redux Toolkit and RTK Query
+- RapidAPI
+- Ant Design
+- Chart.js
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :pushpin:Please Note
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* This project uses CSS _backdrop-filter_ property, which is not supported by Firefox browser (by default)
+* Best viewed in Chrome or Edge browsers
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## :checkered_flag:Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Step to setup local dev environment:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone this repo
+2. Install all the dependencies
 
-### Code Splitting
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Tweak the code
+4. Run on local server
 
-### Analyzing the Bundle Size
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## :page_facing_up:License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Copyright (c) 2021 Kirti Vernekar.
 
-### Advanced Configuration
+Usage is provided under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## :wave:End Note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks for taking out time to read. Please give a :star: if you like this project!
