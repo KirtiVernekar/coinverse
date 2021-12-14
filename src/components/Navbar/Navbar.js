@@ -43,11 +43,11 @@ const Navbar = () => {
                      className={(location.pathname === '/') ? "ant-menu-item-selected" : "inactive"}>
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item icon={<FundOutlined />} key={'cryptocurrencies'} 
+          <Menu.Item icon={<MoneyCollectOutlined />} key={'cryptocurrencies'} 
                      className={(location.pathname === '/cryptocurrencies') ? "ant-menu-item-selected" : ""}>
             <Link to="/cryptocurrencies">Crypto Currencies</Link>
           </Menu.Item>
-          <Menu.Item icon={<MoneyCollectOutlined />} key={'exchanges'} 
+          <Menu.Item icon={<FundOutlined />} key={'exchanges'} 
                      className={(location.pathname === '/exchanges') ? "ant-menu-item-selected" : ""}>
             <Link to="/exchanges">Crypto Exchanges</Link>
           </Menu.Item>

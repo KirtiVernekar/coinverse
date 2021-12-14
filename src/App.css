@@ -41,8 +41,6 @@ a:hover{
 }
 
 .footer {
-  box-sizing: content-box;
-  width: 100%;
   background-color: #001d3a;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding: 10px;

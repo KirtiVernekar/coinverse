@@ -1,7 +1,3 @@
-.exchange-page {
-    height: 100vh;
-}
-
 .exchange-page-header{
     display: flex !important;
     justify-content: space-between;

@@ -19,6 +19,8 @@
 
 :heavy_check_mark: State management using Redux Toolkit
 
+:heavy_check_mark: Custom hooks
+
 :heavy_check_mark: Glassmorphic UI
 
 :heavy_check_mark: Responsive design

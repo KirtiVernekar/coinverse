@@ -23,6 +23,7 @@ const Exchanges = () => {
     const filteredData = exchangesList?.filter((item) => item.name.toLowerCase().includes(searchTerm));
 
     setCryptoExchanges(filteredData);
+
   }, [exchangesList, searchTerm]);
 
   if (isFetching) return <Loader />;
@@ -32,7 +33,10 @@ const Exchanges = () => {
       <Col span={24} className="exchange-page-header">
         <Title level={2} className="exchange-page-heading">Popular Crypto Exchanges</Title>
         <div className="exchange-page-search">
-          <Input allowClear placeholder="Search an Exchange" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
+          <Input allowClear 
+                placeholder="Search an Exchange"
+                onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
+          />
         </div>
       </Col>
       <Row className="exchange-col-header">
