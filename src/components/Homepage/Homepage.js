@@ -26,6 +26,7 @@ const Homepage = () => {
     return <Loader />;
   } else {
   console.log(globalStats);
+  console.log(data);
   return (
     <>
       <Card className="card stats">
