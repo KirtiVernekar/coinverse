@@ -11,10 +11,13 @@ const { Title } = Typography;
 
 const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery(12);
+  // const globalStats = data?.data?.stats;
+
+  if (isFetching) {
+    console.log(isFetching)
+    return <Loader />;
+  } else {
   const globalStats = data?.data?.stats;
-
-  if (isFetching) return <Loader />;
-
   return (
     <>
       <Card className="card stats">
@@ -44,6 +47,7 @@ const Homepage = () => {
       </Card>
     </> 
   );
+  }
 };
 
 export default Homepage;
