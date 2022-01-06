@@ -10,14 +10,22 @@ import './Homepage.css'
 const { Title } = Typography;
 
 const Homepage = () => {
+  let globalStats = {
+    total: 0,
+    total24hVolume: 0.0,
+    totalExchanges: 0,
+    totalMarketCap: 0.0,
+    totalMarkets: 0,
+  };
+
   const { data, isFetching } = useGetCryptosQuery(12);
-  // const globalStats = data?.data?.stats;
+  globalStats = data?.data?.stats;
 
   if (isFetching) {
     console.log(isFetching)
     return <Loader />;
   } else {
-  const globalStats = data?.data?.stats;
+  console.log(globalStats);
   return (
     <>
       <Card className="card stats">
