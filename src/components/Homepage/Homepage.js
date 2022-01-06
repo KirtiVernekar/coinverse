@@ -14,11 +14,8 @@ const Homepage = () => {
   const globalStats = data?.data?.stats;
 
   if (isFetching) {
-    console.log(isFetching)
     return <Loader />;
   } else {
-  console.log(globalStats);
-  console.log(data);
   return (
     <>
       <Card className="card stats">
